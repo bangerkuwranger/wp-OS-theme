@@ -31,6 +31,9 @@ function cAc_wpos_bootstrap() {
 
   load_theme_textdomain( 'cac-wp-os', get_template_directory() . '/lib/translation' );
   add_action( 'init', 'cAc_wpos_qtip' );
+  add_action( 'wp_enqueue_scripts', 'cAc_wpos_enqueue', 999 );
+  add_theme_support( 'menus' );
+  register_nav_menu( 'main-nav', __( 'The Main Menu', 'cac-wp-os' ) );
 
 }
 

@@ -179,14 +179,14 @@ $link-hover-decoration: underline !default;
 // adapting to different screen sizes, for use in media queries.
 
 $grid-breakpoints: (
-  xs: 0,
+  xs: 0px,
   sm: 576px,
   md: 768px,
   lg: 992px,
   xl: 1200px
 ) !default;
-@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
-@include _assert-starts-at-zero($grid-breakpoints);
+// @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+// @include _assert-starts-at-zero($grid-breakpoints);
 
 
 // Grid containers
@@ -199,7 +199,7 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px
 ) !default;
-@include _assert-ascending($container-max-widths, "$container-max-widths");
+// @include _assert-ascending($container-max-widths, "$container-max-widths");
 
 
 // Grid columns

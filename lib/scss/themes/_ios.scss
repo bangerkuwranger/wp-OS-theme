@@ -1,1 +1,32 @@
+body.wpos_ios {
 
+	font-family: $default-font-stack;
+	font-size: 100%;
+	line-height: 1.5;
+	color: $text-color;
+	background-color: $page-bg;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  .header {
+    background-color: $page-bg;
+  }
+
+  #logo {
+    margin: 0.75em 0;
+
+    a {
+      color: $page-link-color;
+      &:hover {
+        color: $page-link-hover-color;
+      }
+    }
+  }
+
+  .footer {
+    clear: both;
+    background-color: $page-bg;
+    color: $text-color;
+  }
+
+}
